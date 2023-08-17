@@ -1,0 +1,28 @@
+2023-06-14 18:15:09 MSG merovingian[7226]: Merovingian 11.45.17 (Sep2022-SP3) starting
+2023-06-14 18:15:09 MSG merovingian[7226]: monitoring dbfarm /Users/debora/Downloads/dnnprov-v2/dnnprov/DfAnalyzer/data
+2023-06-14 18:15:16 MSG merovingian[7230]: Merovingian 11.45.17 (Sep2022-SP3) starting
+2023-06-14 18:15:16 MSG merovingian[7230]: monitoring dbfarm /Users/debora/Downloads/dnnprov-v2/dnnprov/DfAnalyzer/data
+2023-06-14 18:15:16 MSG merovingian[7230]: accepting connections on TCP socket localhost:50000
+2023-06-14 18:15:16 MSG merovingian[7230]: accepting connections on TCP socket localhost:50000
+2023-06-14 18:15:16 MSG merovingian[7230]: accepting connections on UNIX domain socket /tmp/.s.monetdb.50000
+2023-06-14 18:15:16 MSG discovery[7230]: listening for UDP messages on localhost:50000
+2023-06-14 18:15:16 MSG control[7230]: accepting connections on UNIX domain socket /tmp/.s.merovingian.50000
+2023-06-14 18:15:24 MSG control[7230]: (local): created database 'dataflow_analyzer'
+2023-06-14 18:15:35 MSG control[7230]: (local): served status list
+2023-06-14 18:15:35 MSG control[7230]: (local): released database 'dataflow_analyzer'
+2023-06-14 18:15:50 MSG merovingian[7230]: starting database 'dataflow_analyzer', up min/avg/max: 0s/0s/0s, crash average: 0.00 0.00 0.00 (0-0=0)
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: arguments: /opt/homebrew/Cellar/monetdb/11.45.17/bin/mserver5 --dbpath=/Users/debora/Downloads/dnnprov-v2/dnnprov/DfAnalyzer/data/dataflow_analyzer --set=merovingian_uri=mapi:monetdb://Deboras-MBP.local:50000/dataflow_analyzer --set=mapi_listenaddr=none --set=mapi_usock=/Users/debora/Downloads/dnnprov-v2/dnnprov/DfAnalyzer/data/dataflow_analyzer/.mapi.sock --set=monet_vault_key=/Users/debora/Downloads/dnnprov-v2/dnnprov/DfAnalyzer/data/dataflow_analyzer/.vaultkey --set=gdk_nr_threads=12 --set=max_clients=64 --set=sql_optimizer=default_pipe
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # MonetDB 5 server v11.45.17 (Sep2022-SP3)
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Serving database 'dataflow_analyzer', using 12 threads
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Compiled for arm64-pc-darwin-appleclang/64bit with 128bit integers
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Found 16.000 GiB available main-memory of which we use 13.040 GiB
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Copyright (c) 1993 - July 2008 CWI.
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Copyright (c) August 2008 - 2023 MonetDB B.V., all rights reserved
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Visit https://www.monetdb.org/ for further information
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # MonetDB/SQL module loaded
+2023-06-14 18:15:51 MSG dataflow_analyzer[7235]: # Listening for UNIX domain connection requests on mapi:monetdb:///Users/debora/Downloads/dnnprov-v2/dnnprov/DfAnalyzer/data/dataflow_analyzer/.mapi.sock
+2023-06-14 18:15:51 ERR dataflow_analyzer[7235]: #client1: createExceptionInternal: ERROR: InvalidCredentialsException:checkCredentials:invalid credentials for user 'monetdb'
+2023-06-14 18:16:04 MSG merovingian[7230]: caught SIGTERM, starting shutdown sequence
+2023-06-14 18:16:04 MSG control[7230]: control channel closed
+2023-06-14 18:16:04 MSG merovingian[7230]: sending process 7235 (database 'dataflow_analyzer') the TERM signal
+2023-06-14 18:16:05 MSG merovingian[7230]: database 'dataflow_analyzer' has shut down
